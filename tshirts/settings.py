@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import env
+# import env
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +25,7 @@ SECRET_KEY = 'lhe!5nw1)x_-1luzp7%np0!8dy-(jigk^$7ydx#^2x(k-*#0z+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =[ os.environ.get("C9_HOSTNAME"), "2806cbecfc82458990e00524a8c3919d.vfs.cloud9.us-east-1.amazonaws.com"]
+ALLOWED_HOSTS =[ os.environ.get("C9_HOSTNAME"), "2806cbecfc82458990e00524a8c3919d.vfs.cloud9.us-east-1.amazonaws.com",'localhost']
 
 
 
@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     'cart',
     'checkout',
     'reviews'
-    
-    
     ]
     
 
