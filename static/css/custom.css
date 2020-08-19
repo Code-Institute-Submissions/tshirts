@@ -1,8 +1,6 @@
 body {
     font-family: Arial;
     padding-top: 100px;
-   margin:0 auto;
-    text-align: center;
 }
 
 footer {
@@ -45,13 +43,8 @@ footer {
 
 caption p {
     word-wrap: break-word;
-   text-align: center;
 }
-caption{
-    word-wrap: break-word;
-   text-align: center;
 
-}
 .row.row-flex {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +78,5 @@ caption{
     
 }
 .toner{
-    color: black;
+    color: red;
 }
-
-
