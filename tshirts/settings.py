@@ -42,10 +42,15 @@ INSTALLED_APPS = [
     'accounts',
     'products',
     'cart',
+    'django.contrib.sites',
     'checkout',
-    'reviews'
-    ]
+    'form',
     
+
+   
+ 
+    ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

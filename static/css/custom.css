@@ -1,8 +1,21 @@
 body {
     font-family: Arial;
     padding-top: 100px;
+     
 }
+.card-inner{
+    margin-left: 4rem;
+}
+.blert{
+    margin: 25px 50px 75px 100px;
 
+}
+.navbar{
+    margin:0;
+      width: 100%;
+     position: absolute;
+     top: 0;
+}
 footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -78,5 +91,5 @@ caption p {
     
 }
 .toner{
-    color: red;
+    color: black;
 }
