@@ -1,36 +1,17 @@
 
-<!-- front page image -->
-<div class="hero-image">
-<img src="">
-  <div class="hero-text">
-    <h1 style="font-size:50px">MEGA SALE UP TO 50% OFF</h1>
-    <p>HURRY BEFORE ITS TOO LATE</p>
-    <h1 class="nutton">SHOP NOW</h1>
-  </div>
-</div>
+
 {% extends 'base.html' %}
-
-
 {% block content %}
-
- 
-
-
-
-
-
-<div class="row row-flex">
-    {% for product in products %}
+<!-- secton slider -->
+ <div class="row row-flex">
+    {% for product in newin%}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
             <div class="panel-body">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
              <h3 class="toner"> {{ product.name }}</h3>
                 <p class="product-description">{{ product.description }}</p>
-              <p class="off">50% OFF{{product.prices}}</p>
-
                 <p>£{{ product.price }}</p>
-
 
                 <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}

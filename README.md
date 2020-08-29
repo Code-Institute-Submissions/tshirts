@@ -33,10 +33,10 @@ home  Page This page displays all the shirts available and it allows you to add 
 ### Back-End (MySQL Database)
 My backend consists of a relatively simple MySQL database. For testing and Development I use the local Cloud 9 Database and then for the live version I use the ClearDB heroku add on. The databases can be set in the applications db.py file with options for local or remote databases.
 My Database consists of 4 tables:
-* …..
-* ……
-* ……
-* votes
+* checkout
+* products
+* sites
+* feedback
 
 ## Features
 The features of this application are as follows:

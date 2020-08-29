@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+
    
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
@@ -15,10 +17,10 @@
     {% block head_js %}
     {% endblock head_js %}
 </head>
-<body>
+<body data-target="#navbarResponsive">
     <!-- Fixed masthead -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand active" href="{% url 'products' %}">Urban shirts</a>
+  <a class="navbar-brand active" href="{% url 'products' %}">Urban Cloths</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,16 +28,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       
-               
         
                     {% if user.is_authenticated %}
+          
                        <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">Shop Now</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'newin' %}">Newin</a></li>
+                        
+              
                         <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Log Out</a></li>
                          
                         
                     {%  else %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'products' %}">Shop Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'newin' %}">Newin</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'register' %}">Register</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
@@ -44,10 +50,13 @@
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
+                             
+             
                         </a>
                     </li>
                 </ul>
             </div>
+
             <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -78,6 +87,14 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+jQuery(document).ready(function($)  {
+$("li.dropdown a").click(function(e){
+    $(this).next('ul.dropdown-menu').css("display", "block");
+    e.stopPropagation();
+  });
+}); </script>     
 </html>
 
 

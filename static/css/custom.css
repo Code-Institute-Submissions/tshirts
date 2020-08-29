@@ -70,8 +70,9 @@ caption p {
 }
 
 .panel-body {
-    height: 100%;
+   
     border: 1px solid #ddd;
+    margin:20px;
 }
 
 .product-description {
@@ -87,9 +88,52 @@ caption p {
 }
 .panel-body{
     margin:0 auto;
-    text-align: center;
+    text-align: 100px;
     
 }
 .toner{
     color: black;
+}
+.off{
+    color:red;
+}
+.nutton{
+    color:white;
+}
+/*---------------------------front page image-------------------------------*/
+
+.hero-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  background-color: red;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+  outline: black;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: rgb(247, 241, 241);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }

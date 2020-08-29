@@ -6,6 +6,7 @@ from .models import OrderLineItem
 from django.conf import settings
 from django.utils import timezone
 from products.models import Product
+from newin.models import Product
 import stripe
 
 # Create your views here.
