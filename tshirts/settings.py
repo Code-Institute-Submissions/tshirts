@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import env
+from django.conf import settings
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -49,8 +50,15 @@ INSTALLED_APPS = [
     'cart',
     'django.contrib.sites',
     'checkout',
-    'form',
-    'newin'
+    'newin',
+    'about',
+    'storages',
+    'boto3',
+    
+
+    
+
+   
     
 
    
@@ -69,6 +77,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tshirts.urls'
+
+
 
 TEMPLATES = [
     {
@@ -100,6 +110,9 @@ WSGI_APPLICATION = 'tshirts.wsgi.application'
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
    #  }
 # }
+
+
+
 
 
 
@@ -144,6 +157,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+STATICFILES_LOCATION ='static'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
@@ -155,7 +172,8 @@ STATICFILES_DIRS = (
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_URL = "https://media" 
+  
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')

@@ -1,8 +1,9 @@
-# milestone-project-Urban Shirts
+# milestone-project-Urban cloths
 
 
-This project is a startup  business where you find very good T-shirts for a very good price.
-My idea at first was to make clothing line where I provide all sorts of clothing them I figured is best to start my business small just to avoid complications, so I decided to only leave I as T-shirts.
+
+This project is a startup  business where you find very good cloths for a very good price.
+My idea at first was to make clothing line where I provide all sorts of clothing them I figured is best to start my business small just to avoid complications, so I decided to only leave I as item.
 This project is inspired by a desire that I had to start a clothing line from a young age, I really didn’t know where to start, but with the help of code institutes mini project I already knew exactly what I wanted to do .iThis application is a T-shirt clothing line for boy and girls at all ages I want this application to be somewhere customers list and leave with the desires fulfilled, I updated the product frequently I do this by changing the prise and even the items sometimes.
 ## UX
 My UX process was to  examine the customer’s requirements and try and think of different ways to include this into not only just a website but a website that is user friendly and easy to navigate around.
@@ -16,7 +17,7 @@ My UX process was to  examine the customer’s requirements and try and think of
 ## User stories:
 * As a user I want to be able to create an account
 * As a user I want to be able to pick the shirt of my choose, edit and delete it from/or in the cart.
-* As a user I want to view all available shirts and the price.
+* As a user I want to view all available cloths and the price.
 * As a user I want to be able to vote on other user’s videos as well as them with my videos
 * As a user I want be able to leave a review and rating 
 * As a user I want to be able to log out of my account
@@ -25,10 +26,10 @@ My UX process was to  examine the customer’s requirements and try and think of
 
 ### Front-End
 My design inspiration was essentially from code institutes mini project . I just modified it slightly to by adding a vote and comment section.I have a few small very basic sketches as I more or less knew in my head how I wanted the site to look. I did my sketches using (…..uxdesign here….). 
-I was considering also doing some mobile resolution mockups but its more or less the same except for the mobile menu and the fact that instead of having 3 shirts in a row on a mobile devise you can only see one.
+I was considering also doing some mobile resolution mockups but its more or less the same except for the mobile menu and the fact that instead of having 3 products in a row on a mobile devise you can only see one.
 Login/Register Pages These pages are more or less the same design wise. If there is an issue with either login or registration then a brief information message should appear on the screen. New users will be able too register a new account.
-home  Page This page displays all the shirts available and it allows you to add the shirt of your choose to the carts.
- carts page On this page you would see all the shirts you added to the cart, fro m there you would purchase your shirts and you would do this by filling a form out where you put your card details.
+home  Page This page displays all the items available and it allows you to add the shirt of your choose to the carts.
+ carts page On this page you would see all the items you added to the cart, fro m there you would purchase your item and you would do this by filling a form out where you put your card details.
 
 ### Back-End (MySQL Database)
 My backend consists of a relatively simple MySQL database. For testing and Development I use the local Cloud 9 Database and then for the live version I use the ClearDB heroku add on. The databases can be set in the applications db.py file with options for local or remote databases.
@@ -36,19 +37,19 @@ My Database consists of 4 tables:
 * checkout
 * products
 * sites
-* feedback
+* newin
 
 ## Features
 The features of this application are as follows:
 * Ability to Register, Sign into and Logout of an Account
-* Ability to Create, Edit, Delete and View shirts
-* Ability to rate and leave a comments about the shirts
-* Ability to order shirts of your choose.
+* Ability to Create, Edit, Delete and View item
+* Ability to rate and leave a comments about the item
+* Ability to order item of your choose.
 
 ## Features Left to Implement
 ###Technologies Used
 
-In the future I would like to grow my website by adding more product which is not only shirts I would like to make a clothing line for Both male and female from all age groups that provide all sorts of clothing including jumpers, trousers and many more. I also want to make a place where customers can custom design the own shirt then order it it.
+In the future I would like to grow my website by adding more product which is not only item I would like to make a clothing line for Both male and female from all age groups that provide all sorts of clothing including jumpers, trousers and many more. I also want to make a place where customers can custom design the own shirt then order it it.
 Python and Flask
 Flask is the Python Framework I’m using for this application
 
@@ -72,7 +73,7 @@ After running each possible scenario multiple times, going over each feature, us
 * Login in with correct details
 * Add items to the cart
 * Remove items from the cart 
-* Amend t-shirts in the cart
+* Amend item in the cart
 * Logout
 
 ## Deployment
